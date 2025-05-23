@@ -1,0 +1,31 @@
+<!-- index.html --><!DOCTYPE html><html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Stock Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between p-4 bg-white dark:bg-gray-800 shadow-lg rounded-2xl m-4">
+    <h1 class="text-xl font-bold text-gray-800 dark:text-gray-100">AI Stock Dashboard</h1>
+    <button id="theme-toggle" class="p-2 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-700">
+      <span id="theme-icon">🌙</span>
+    </button>
+  </nav>  <!-- Dashboard -->  <main class="p-4 grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div class="card" data-type="line">
+      <h2 class="text-lg font-semibold mb-2">Price Chart</h2>
+      <div class="h-48 flex items-center justify-center text-gray-400">Loading chart...</div>
+    </div>
+    <div class="card" data-type="heatmap">
+      <h2 class="text-lg font-semibold mb-2">Volume Heatmap</h2>
+      <div class="h-48 flex items-center justify-center text-gray-400">Loading chart...</div>
+    </div>
+    <div class="card" data-type="bar">
+      <h2 class="text-lg font-semibold mb-2">Sentiment Score</h2>
+      <div class="h-48 flex items-center justify-center text-gray-400">Loading chart...</div>
+    </div>
+  </main>  <script src="script.js"></script></body>
+</html>/* styles.css */ .card { @apply rounded-2xl bg-white dark:bg-gray-800 shadow p-4; }
+
